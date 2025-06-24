@@ -1,6 +1,6 @@
 {
-    "noir_version": "1.0.0-beta.6+e796dfd67726cbc28eb9991782533b211025928d",
-    "hash": "14659237188797489505",
+    "noir_version": "1.0.0-beta.3+ceaa1986628197bd1170147f6a07f0f98d21030a",
+    "hash": 10445999496241964397,
     "abi": {
         "parameters": [
             {
@@ -27,9 +27,9 @@
         }
     },
     "bytecode": "H4sIAAAAAAAA/7WTQQ7CIBBFgWrUte3CW8wUaGFXb+DanY30MJ7GO3gJj2NMmYjT7kpf0gyBye/nA1KMFPH7solVih807mLV0BgT2jqgxhvUvncWjO0bhw6ts/faaR2cca3vfQsejQ44WK8HGJFRk+vCMjCjFqT7V2sHoVYMYqnHImOocxnCMlAllzf32Wz4BRD/D2Nujnqv59fpcXm+ec+B1SpZz5g1kn65jj7sxJQqGZdsn2mGXSYPpEfnvxVTFFuj3j3zJ/P7Q+6lmPkXcYy1TOYozw+N/+l9qQUAAA==",
-    "debug_symbols": "jZDBCoMwDIbfJece3Iab+CpjSK1RCqEtsR0M8d0Xi256GOySNPnzpeSfoMM2DY11vR+hvk/QsiWyQ0Pe6Gi9k+40K9jKJjKitGCnCxU0o4tQu0Sk4Kkp5aExaJdz1CxqoQBdJ1kW9pZwec3qSxe/0fKysmX1gcu/6dt5pavrgX5IpY3lw7VQQC3zpxzPEudlMVvdEq5u9MmZnTnxFTZlsy+wN9glxmV11uSzNw==",
+    "debug_symbols": "lY7LCsMgEEX/ZdYumizS4q+UEnyMYUBURi0Uyb/XhASyzfLcc+cyDSzquswUXMwg3w18NKpQDJ0aPPYoJxU2ykVxAfkcBWCwIF/TKsCRR5DTsH4EDPfq4516B83kPS3z9cUefxWT0h4PdDWYiy2/dJrzPnE0aCvjtrS7Pv8H",
     "file_map": {
-        "50": {
+        "61": {
             "source": "fn main(x : Field, y : Field) {\r\n    let y_squared = y * y;\r\n    assert(x != y_squared, \"x and y squared must be different\");\r\n}",
             "path": "/mnt/f/Starknet/scaffold-garaga/circuit/src/main.nr"
         }

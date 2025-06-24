@@ -40,9 +40,6 @@ prove-circuit:
 gen-vk:
 	bb write_vk --scheme ultra_honk --oracle_hash starknet -b ./circuit/target/circuit.json -o ./circuit/target
 
-# gen-vk:
-# 	bb write_vk --scheme ultra_honk -c ./circuit/target -o ./circuit/target/vk
-
 
 gen-verifier:
 	cd contracts && garaga gen --system ultra_starknet_honk --vk ../circuit/target/vk --project-name verifier
