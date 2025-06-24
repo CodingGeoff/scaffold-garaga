@@ -1,1 +1,43 @@
-{"noir_version":"1.0.0-beta.3+ceaa1986628197bd1170147f6a07f0f98d21030a","hash":13739708585679992352,"abi":{"parameters":[{"name":"x","type":{"kind":"field"},"visibility":"private"},{"name":"y","type":{"kind":"field"},"visibility":"public"}],"return_type":null,"error_types":{}},"bytecode":"H4sIAAAAAAAA/7VSWw4CIQzkoVG/Ze/R8ljKn1eRyN7/CMYICWH7t+wkZAhthpmCFH+oun64VJZij9bzqgzHgL2Wg9X7Em1Bh2+wKVMAH/JKSBgofCw5V8hTTDlFSOhdwS0kt1UxOc8XSCbzKeHV5AGozvhMXe5TSOZsrD0GXrq6njjLpm/O0Ycbk3Hp9mbIyb0DHETT05WvYg811FrvffAn5/vD0Ytm7mp4VjbdWZvnF3hgTpCVBAAA","debug_symbols":"lY3LCsMgEEX/ZdYuKjRd+CulBB9jGBCVUQtF8u81IYFsszz3zNzbwaFpy0zRpwLq3SEkqyulOKjDY49K1nGjUjVXUM9JAEYHapKrAE8BQb3k+hEg75wPMEwh0DJfN0f81UzaBDzQt2gvtv7yac7/zMmia4xb0+5G/R8=","file_map":{"61":{"source":"fn main(x: Field, y: pub Field) {\n    assert(x != y);\n}\n","path":"/Users/kevinsheeran/Developer/starknet/scaffold-garaga/circuit/src/main.nr"}},"names":["main"],"brillig_names":["directive_invert"]}
+{
+    "noir_version": "1.0.0-beta.6+e796dfd67726cbc28eb9991782533b211025928d",
+    "hash": "14659237188797489505",
+    "abi": {
+        "parameters": [
+            {
+                "name": "x",
+                "type": {
+                    "kind": "field"
+                },
+                "visibility": "private"
+            },
+            {
+                "name": "y",
+                "type": {
+                    "kind": "field"
+                },
+                "visibility": "private"
+            }
+        ],
+        "return_type": null,
+        "error_types": {
+            "15614068462161445210": {
+                "error_kind": "string",
+                "string": "x and y squared must be different"
+            }
+        }
+    },
+    "bytecode": "H4sIAAAAAAAA/7WTQQ7CIBBFgWrUte3CW8wUaGFXb+DanY30MJ7GO3gJj2NMmYjT7kpf0gyBye/nA1KMFPH7solVih807mLV0BgT2jqgxhvUvncWjO0bhw6ts/faaR2cca3vfQsejQ44WK8HGJFRk+vCMjCjFqT7V2sHoVYMYqnHImOocxnCMlAllzf32Wz4BRD/D2Nujnqv59fpcXm+ec+B1SpZz5g1kn65jj7sxJQqGZdsn2mGXSYPpEfnvxVTFFuj3j3zJ/P7Q+6lmPkXcYy1TOYozw+N/+l9qQUAAA==",
+    "debug_symbols": "jZDBCoMwDIbfJece3Iab+CpjSK1RCqEtsR0M8d0Xi256GOySNPnzpeSfoMM2DY11vR+hvk/QsiWyQ0Pe6Gi9k+40K9jKJjKitGCnCxU0o4tQu0Sk4Kkp5aExaJdz1CxqoQBdJ1kW9pZwec3qSxe/0fKysmX1gcu/6dt5pavrgX5IpY3lw7VQQC3zpxzPEudlMVvdEq5u9MmZnTnxFTZlsy+wN9glxmV11uSzNw==",
+    "file_map": {
+        "50": {
+            "source": "fn main(x : Field, y : Field) {\r\n    let y_squared = y * y;\r\n    assert(x != y_squared, \"x and y squared must be different\");\r\n}",
+            "path": "/mnt/f/Starknet/scaffold-garaga/circuit/src/main.nr"
+        }
+    },
+    "names": [
+        "main"
+    ],
+    "brillig_names": [
+        "directive_invert"
+    ]
+}
