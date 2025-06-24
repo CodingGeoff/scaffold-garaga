@@ -1,0 +1,6 @@
+{
+  "devDependencies": {
+    "typescript": "^5.9.0-dev.20250624",
+    "vite": "^7.0.0"
+  }
+}

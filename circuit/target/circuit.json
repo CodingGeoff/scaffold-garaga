@@ -1,6 +1,6 @@
 {
     "noir_version": "1.0.0-beta.3+ceaa1986628197bd1170147f6a07f0f98d21030a",
-    "hash": 10445999496241964397,
+    "hash": 5226950010611289851,
     "abi": {
         "parameters": [
             {
@@ -15,7 +15,7 @@
                 "type": {
                     "kind": "field"
                 },
-                "visibility": "private"
+                "visibility": "public"
             }
         ],
         "return_type": null,
@@ -26,11 +26,11 @@
             }
         }
     },
-    "bytecode": "H4sIAAAAAAAA/7WTQQ7CIBBFgWrUte3CW8wUaGFXb+DanY30MJ7GO3gJj2NMmYjT7kpf0gyBye/nA1KMFPH7solVih807mLV0BgT2jqgxhvUvncWjO0bhw6ts/faaR2cca3vfQsejQ44WK8HGJFRk+vCMjCjFqT7V2sHoVYMYqnHImOocxnCMlAllzf32Wz4BRD/D2Nujnqv59fpcXm+ec+B1SpZz5g1kn65jj7sxJQqGZdsn2mGXSYPpEfnvxVTFFuj3j3zJ/P7Q+6lmPkXcYy1TOYozw+N/+l9qQUAAA==",
-    "debug_symbols": "lY7LCsMgEEX/ZdYumizS4q+UEnyMYUBURi0Uyb/XhASyzfLcc+cyDSzquswUXMwg3w18NKpQDJ0aPPYoJxU2ykVxAfkcBWCwIF/TKsCRR5DTsH4EDPfq4516B83kPS3z9cUefxWT0h4PdDWYiy2/dJrzPnE0aCvjtrS7Pv8H",
+    "bytecode": "H4sIAAAAAAAA/7WTQQ7CIBBFgWrUte3CW8wUaGFXb+DanY30MJ7GO3gJj2NMIU6mjZvSlzRDGPL7+YAUI0X8vmxileJHGnexamiMCW0dUOMNat87C8b2jUOH1tl77bQOzrjW974Fj0YHHKzXA4zIqMl1YRmYUQvo/tXaQagVg1jqscgY6lyGsAxU5PLmPpt/j2Fujl6W6/l1elyeb77mwGpF+hmzxqRfrqMPOzGlIuOS7VORXpfJQ9JL578VUxTrpbV75k/m94fcSzHzr8Qx1pLMpTw/DqTWoqkFAAA=",
+    "debug_symbols": "lY7LCsMgEEX/ZdYuki5S6q+UEnyMYUBURi0Uyb/XhASyzfLcc+cyDSzquswUXMwg3w18NKpQDJ0aDHuUkwob5aK4gHxOAjBYkK9hFeDII8hpXD8Cxnv1x516B83kPS3z9cUefxWT0h4PdDWYiy2/dJrzPnE0aCvjtrS7Pv8H",
     "file_map": {
         "61": {
-            "source": "fn main(x : Field, y : Field) {\r\n    let y_squared = y * y;\r\n    assert(x != y_squared, \"x and y squared must be different\");\r\n}",
+            "source": "fn main(x : Field, y : pub Field) {\r\n    let y_squared = y * y;\r\n    assert(x != y_squared, \"x and y squared must be different\");\r\n}",
             "path": "/mnt/f/Starknet/scaffold-garaga/circuit/src/main.nr"
         }
     },

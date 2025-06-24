@@ -1,5 +1,26 @@
 [sncast.default]
 url = "http://localhost:5050/rpc"
-accounts-file = "accounts.json"
-account = "devnet0"
-show-explorer-links = false
+accounts-file = "./accounts.json"
+
+# 新增下面的 Sepolia 配置
+# [sncast.sepolia]
+# url = "https://starknet-sepolia.public.blastapi.io/rpc/v0_7"
+# accounts-file = "./accounts.json"
+# account = "my-sepolia-wallet" # 必须与 accounts.json 中的账户名一致
+
+
+# [sncast.sepolia]
+# # 选项1: 使用 Chainstack 的节点
+# url = "https://starknet-sepolia.chainstacklabs.com/rpc/v0.7"
+# # 选项2: 使用 Nethermind 的节点
+# # url = "https://rpc.sepolia.starknet.rs/rpc/v0.7"
+
+# accounts-file = "./accounts.json"
+# account = "my-sepolia-wallet" # 确保这个名字和 accounts.json 里的一致
+
+
+[sncast.sepolia]
+# url = "https://starknet-sepolia.chainstacklabs.com/rpc/v0.7"
+# network = "sepolia"
+accounts-file = "/root/.starknet_accounts/starknet_open_zeppelin_accounts.json" # 虽然此行对 declare/deploy 非必须，但写上更清晰
+account = "my-sncast-wallet" # <-- 修改成新的钱包名
